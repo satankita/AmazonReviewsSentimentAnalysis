@@ -55,7 +55,7 @@ From above, we used an overall sample of approximately 36,000 Amazon reviews and
 For initial training and testing, we used a 70% training sample and 30% testing sample. The distribution of positive/negative sentiments closely matches that of the overall in both cases.
  
  
-Count Vectorization, TF-IDF Transformation, and VADER Sentiments:
+**Count Vectorization, TF-IDF Transformation, and VADER Sentiments:**
  
 Our initial text processing method was a combination of count vectorization, TF-IDF transformation, and adding VADER sentiments. The count vectorizer uses a custom cleaning function to remove stopwords and separate the review text into individual words as follows:
  
@@ -66,14 +66,14 @@ Last, we applied TF-IDF transform to account for issues of term frequency and do
 We found that Tf-IDF did not contribute to optimal results, so we did not move further with it.
  
  
-Vector Embeddings:
+**Vector Embeddings:**
 To enhance the representation of text data, we used BERT models. Text embeddings were generated using Both BERT-base and RoBERTa. BERT (Bidirectional Encoder Representations from Transformers) is a pretrained model that captures contextual word semantics  in high-dimensional vector space. Text data was tokenized using BertTokenizer, and for each review, the [CLS] token’s representation was extracted as the sentence embedding. These embeddings further improved the results obtained from the earlier transformations, by about 4 percentage points (this discovery was found after initial tests of different algorithms; applying vector embeddings dramatically improved the results). 
 
 Additionally, we used RoBERTa (Robustly Optimized BERT Approach), an optimized version of BERT. Like BERT, we tokenized the text with RobertaTokenizer and processed with RobertaModel; the [CLS] tokens were extracted from each review to act as our features. RoBERTa embeddings were shown to outperform BERT embeddings by approximately 5 percentage points, demonstrating their ability to capture greater contextual representations. To augment these embeddings, we used features like text length and word count.
 
 In our testing, we found that RoBERTa embeddings out performed BERT embeddings, which makes sense, as RoBERTa is an optimized version of BERT. 
  
-Machine learning models:
+**Machine Learning Models:**
 Results for each classification are measured in the notebook with the classification report function from SkLearn which provides precision, recall, F1-score, and accuracy.
 
 Support Vector Machine
