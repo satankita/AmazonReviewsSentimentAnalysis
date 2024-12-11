@@ -42,7 +42,7 @@ When run, Colab will prompt you to connect to your drive and sign in again throu
 
 Note - in our Google Collab file we have included commented out experiment code that does not contribute to the final model, but is there for reference (the  results of these experiments helped us build the final model). 
  
-**Process Flow (how we appraoched our project) **
+**Process Flow (how we appraoched our project)**
 <img width="799" alt="Screenshot 2024-12-11 at 6 14 02 PM" src="https://github.com/user-attachments/assets/708feaa4-8c04-47fe-b82e-e4cb2689def8" />
 
 **Data Processing**
