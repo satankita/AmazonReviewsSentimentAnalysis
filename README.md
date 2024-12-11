@@ -95,7 +95,7 @@ K-Nearest Neighbors
 K-Nearest Neighbors (KNN) is a supervised machine learning algorithm for classification that classifies a data point based on the similarity to the majority of the k nearest points. It requires a distance measure and a selection for how many neighbors to make a classification. The advantages of KNN are that it is simple to understand and use, and that it is nonparametric (requires no assumptions of underlying variables). However, it is sensitive to irrelevant features, and is poor in high dimensions. In high dimensional feature spaces, we would need to introduce feature reduction techniques (PCA, etc) to improve the accuracy/effectiveness of the model at the cost of adding pre-processing complexity. In addition, figuring out the correct choice of k can heavily affect the model’s performance, as smaller k values cause the model to be more sensitive to noise and larger k values may dilute the importance of certain features/data. In our project we used the KNeighborsClassification in the SkLearn library with default parameters, which sets k=5, and the distance measure to be Euclidean distance.
 
 
-After running these tested, we analyzed the results to determine which models performed best. 
+After running these tests, we analyzed the results to determine which models performed best. 
 
 **Final Product:**
 Based on the results of our research and experiments, we found that the optimal embedding model was roBERTa, which out performed BERT by about 4%. In earlier tests, we found that embeddings in general improved the performance of the sentiment analysis in tests comparing algorithms with and without embeddings applied.
