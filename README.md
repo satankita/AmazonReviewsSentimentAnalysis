@@ -28,6 +28,7 @@ Selected Python Libraries:
 ·  	Transformers – This library is used for BERT and RoBERTa embeddings. 
  
 **Software / Access**
+
 For this project we used Google Colab. Google Colab is a hosted Jupyter Notebook platform that allows users with Google accounts to share and modify code. To use it, first login using a Google account. Then download the project notebook from Github.
  
 https://github.com/satankita/AmazonReviewsSentimentAnalysis
@@ -72,6 +73,7 @@ We found that Tf-IDF did not contribute to optimal results, so we did not move f
  
  
 **Vector Embeddings:**
+
 To enhance the representation of text data, we used BERT models. Text embeddings were generated using Both BERT-base and RoBERTa. BERT (Bidirectional Encoder Representations from Transformers) is a pretrained model that captures contextual word semantics  in high-dimensional vector space. Text data was tokenized using BertTokenizer, and for each review, the [CLS] token’s representation was extracted as the sentence embedding. These embeddings further improved the results obtained from the earlier transformations, by about 4 percentage points (this discovery was found after initial tests of different algorithms; applying vector embeddings dramatically improved the results). 
 
 Additionally, we used RoBERTa (Robustly Optimized BERT Approach), an optimized version of BERT. Like BERT, we tokenized the text with RobertaTokenizer and processed with RobertaModel; the [CLS] tokens were extracted from each review to act as our features. RoBERTa embeddings were shown to outperform BERT embeddings by approximately 5 percentage points, demonstrating their ability to capture greater contextual representations. To augment these embeddings, we used features like text length and word count.
@@ -79,6 +81,7 @@ Additionally, we used RoBERTa (Robustly Optimized BERT Approach), an optimized v
 In our testing, we found that RoBERTa embeddings out performed BERT embeddings, which makes sense, as RoBERTa is an optimized version of BERT. 
  
 **Machine Learning Models:**
+
 Results for each classification are measured in the notebook with the classification report function from SkLearn which provides precision, recall, F1-score, and accuracy.
 
 Support Vector Machine
