@@ -5,6 +5,7 @@ Amazon reviews serve several important purposes for customers and sellers. Speci
  
 For sellers, it is important to quickly analyze customer reviews to assess customer sentiment on their products. For a large volume of reviews, it is infeasible for these reviews to be manually read by humans. It is therefore important to have a machine learning solution to quickly determine the sentiment of customers. Sentiments in the real world can be complex, so it is difficult to identify just one model or algorithm to use. Currently, popular tools for sentiment analysis include SVMs and Logistic Regression that work up to a threshold. Through research and experiments, we determined that a hybrid model is best to tackle challenges currently existing in sentiment analysis models. This project aims to develop an optimized tool for sentiment analysis based on the text of customer reviews.
 
+Video: https://mediaspace.illinois.edu/media/t/1_j7irncc4
 **Problem Statement:**
  
 In this project, we aim to build and evaluate a novel Sentiment Analysis Tool using a dataset of Amazon reviews. The model will be trained to classify the sentiment of each review as positive or negative using natural language processing, tokenization and/or k-fold cross validation/other methods.
