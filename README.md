@@ -1,4 +1,4 @@
-# Amazon Reviews Sentiment Analysis - Team 18
+# Amazon Reviews Sentiment Analysis Documentation - Team 18
 **Introduction:**
  
 Amazon reviews serve several important purposes for customers and sellers. Specifically, reviews can help customers make more informed decisions by providing authentic and informed feedback on products. Positive reviews can help highlight a product to potential customers, while negative reviews will dissuade buyers and inform sellers of areas to improve. In totality, reviews add transparency to the buying and selling process on Amazon.
