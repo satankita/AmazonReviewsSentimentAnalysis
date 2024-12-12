@@ -15,7 +15,9 @@ For evaluation, the model’s sentiment predictions will be compared with the ac
  
  
 **Data and Tools:**
-• Google Colab: https://colab.research.google.com/drive/1ddMoyU_0E7H-v_k5VltzaqVq1Ckr0aPc?usp=sharing
+
+• Google Colab:http://colab.research.google.com/
+
 • Amazon Review data from Kaggle:
 https://www.kaggle.com/datasets/kritanjalijain/amazon-reviews/data for
 Sentiment Analysis
@@ -30,7 +32,7 @@ For this project we used Google Colab. Google Colab is a hosted Jupyter Notebook
  
 https://github.com/satankita/AmazonReviewsSentimentAnalysis
  
-Google Colab Link: http://colab.research.google.com/
+Google Colab Link:  https://colab.research.google.com/drive/1ddMoyU_0E7H-v_k5VltzaqVq1Ckr0aPc?usp=sharing
  
 To upload our notebook onto your own Colab, do the following:
  
