@@ -101,7 +101,7 @@ After running these tests, we analyzed the results to determine which models per
 **Final Product:**
 Based on the results of our research and experiments, we found that the optimal embedding model was roBERTa, which out performed BERT by about 4%. In earlier tests, we found that embeddings in general improved the performance of the sentiment analysis in tests comparing algorithms with and without embeddings applied.
 
-RoBERTa combined with SVM yielded the highest results of 91%. Combining this with the additional features from VADER optimized the accuracy of the model. 
+RoBERTa combined with SVM yielded the highest results. Combining this with the additional features from VADER optimized the accuracy of the model. 
 
 XGBoost also has extremely high results, almost equating to the results of RoBERTa combined with SVM. For this reason, we suggest a stacked ensemble model of RoBERTa, SVM, XGBoost, and Logistic Regression with VADER features for optimal results. SVM works well with high-dimensional data with linear relationships. XGBoost is able to then fill gaps with optimizing for nonlinear relationships in the data (improving robustness). A logistic regression model is included in the stacking ensemble as it is able to combine predictions from base models SVM and XGBoost effectively. So although our stacked model results are similar to the SVM results, this hybrid model is optimal for adapting future types of linear and nonlinear relationships and varying data sets. 
 
