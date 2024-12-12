@@ -16,7 +16,7 @@ For evaluation, the model’s sentiment predictions will be compared with the ac
  
 **Data and Tools:**
 
-• Google Colab:http://colab.research.google.com/
+• Google Colab: http://colab.research.google.com/
 
 • Amazon Review data from Kaggle:
 https://www.kaggle.com/datasets/kritanjalijain/amazon-reviews/data for
